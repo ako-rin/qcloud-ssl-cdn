@@ -12,7 +12,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Prepare Environment
         run: |
           curl https://get.acme.sh | sh -s email=my@example.com
