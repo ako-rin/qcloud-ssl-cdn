@@ -1,5 +1,5 @@
 ## 腾讯云自动SSL证书上传及替换
-功能：  
+功能：   
 * [SSL证书](https://console.cloud.tencent.com/ssl)：把本地的SSL证书上传到腾讯云SSL证书，并记录id
 * [CDN服务](https://console.cloud.tencent.com/cdn)：为CDN服务更换指定id的SSL证书；根据网址，批量预热URL
 * [ECDN服务](https://console.cloud.tencent.com/ecdn)：为ECDN服务更换指定id的SSL证书
