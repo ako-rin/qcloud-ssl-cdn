@@ -12,10 +12,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
       - name: Prepare Environment
         run: |
           curl https://get.acme.sh | sh -s email=my@example.com
-          pip install -r requirements.txt      - name: Update Cert
+          pip install -r requirements.txt
+
+      - name: Update Cert
         env:
           # 环境变量根据实际情况自行修改或增删，未设置则使用默认值（参见update.sh）
           DP_Id: ${{ secrets.DP_Id }}
@@ -52,4 +55,4 @@ jobs:
       #     url: 'github://github.com/${{ github.repository }}'
       #     group: Github
       #     icon: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-          copy: ${{ steps.meta.outputs.tags }}
+      #     copy: ${{ steps.meta.outputs.tags }}
